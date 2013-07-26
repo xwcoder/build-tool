@@ -1,0 +1,6 @@
+
+build/app.js
+build/upload.txt
+js/base/plugin/history.src.js
+js/base/plugin/nav/history.src.js
+js/base/plugin/nav/rss.src.js
