@@ -1,0 +1,25 @@
+{
+  "name": "build-tool",
+  "version": "0.0.1",
+  "description": "自动工具",
+  "main": "app.js",
+  "dependencies": {
+    "ftp": "~0.3.2",
+    "iconv-lite": "~0.2.11",
+    "jschardet" : "~1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xwcoder/build-tool.git"
+  },
+  "author": "creep",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xwcoder/build-tool/issues"
+  },
+  "homepage": "https://github.com/xwcoder/build-tool"
+}

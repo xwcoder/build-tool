@@ -1,4 +1,5 @@
 var util = require( 'util' );
+var path = require( 'path' );
 
 var appUtil = {
 
@@ -13,7 +14,8 @@ var appUtil = {
     },
 
     isScript : function ( filename ) {
-        return /\.js(?=[\?#]|$)/i.test( filename || '' );
+        //return /\.js(?=[\?#]|$)/i.test( filename || '' );
+        return path.extname( filename ) == '.js';
     },
 
     isString : function ( s ) {

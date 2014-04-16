@@ -1,28 +1,3 @@
-/**
- * @author xwcoder
- * 文件压缩器, 使用在线压缩服务, 参数根据内网压缩服务器配置.
- * 
- * 模块提供两个方法:
- *  compress( <Array|String>filenames, <Object>settings, <String>stamp)
- *      - filename 要压缩的文件名[集合]
- *      - setttings 在线压缩服务器的配置信息
- *          host : 地址
- *          port : 端口
- *          author : 作者
- *          exclude <Array> : 不压缩文件过滤器, 每一项可以是:
- *              - string : 相等匹配
- *              - RegExp : 正则配置
- *              - function( filename ) : return true 匹配; return false 不匹配
- *      - stamp 压缩文件名中替换src部分的字符串，通常是时间戳
- *  on( <String>topic, <Function>callback ), 支持两个事件:
- *      -success 单个文件压缩成功 callback接收两个参数srcfilename minfilename
- *      -done 全部文件压缩成功 callback接收一个对象参数result, 包含如下:
- *          - compare [<Object>] : 源文件和压缩文件的对比
- *          - src [String] : 全部源文件名
- *          - min [String] : 全部压缩文件名
- *          - skip [String] : 跳过压缩的文件名
- *      
- */
 var http = require( 'http' );
 var querystring = require( 'querystring' );
 var util = require( 'util' );
